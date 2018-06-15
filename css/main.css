@@ -1,0 +1,111 @@
+@font-face {
+  font-family: "Press Start 2P";
+  src: url("/font/PressStart2P.ttf");
+}
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+body {
+  margin: 0 auto;
+  color: white;
+  font-family: "Press Start 2P";
+  background: url("../img/bg1.png") no-repeat center center fixed;
+  background-size: cover;
+  line-height: 120%;
+}
+.box {
+  color: white;
+  padding: 10px 30px;
+}
+a {  
+  color: #5df;
+  text-decoration: none;
+}
+a:hover {
+  color: #95f;
+}
+.card {
+  padding: 10px;
+  position: relative;
+}
+.card img {
+  width: 100%;
+  max-height: 150px;
+}
+.videos img {
+  width: 250px;
+  max-height: none;
+  height: 100%;
+}
+.card-name {
+  font-size: 18px;
+  padding: 10px;
+  color: white;
+  position: absolute;
+  bottom: 9px;
+  text-overflow: ellipsis;
+  left: 10px;
+  right: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  background: rgba(0, 0, 0, 0.85);
+}
+.videos .card-name {
+  font-size: 12px;
+}
+.videos .card {
+  display: inline-block;
+}
+.dark {
+  background: rgba(0, 0, 0, 0.85);
+}
+.nav-tabs {
+  background: rgba(0, 0, 0, 0.85);
+  border-bottom: none;
+}
+.nav-tabs>li>a {
+  border: none;
+  padding: 20px;
+}
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {  
+  color: #f95;
+  background: none;
+  border: none;
+}
+.list-group-item.selected {
+  color: #f95 !important;
+}
+.list-group-item:hover, .newest:hover, .newest:hover .card-name, .videos .card:hover .card-name {
+  color: #5df;
+  cursor: pointer;
+}
+.nav>li>a:focus, .nav>li>a:hover {
+  text-decoration: none;
+  background: none;
+  border: none;
+}
+.list-group {
+  height: 90vh;
+  overflow: auto;
+}
+.list-group-item {
+  color: white;
+  background: rgba(0,0,0,0.4);
+  border: none;
+  margin: 0px;
+}
+*::-webkit-scrollbar {
+  width: 1em;
+}
+*::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid #777;
+}
+table tr td:first-child
+{
+  text-align: right;
+  padding: 10px;
+  color: #95f;
+  vertical-align: top;
+}

@@ -1,0 +1,23 @@
+{
+  "name": "urt-maps-grabber",
+  "description": "Periodically grab the list of Urban Terror jump maps from UrtJumpers.",
+  "dependencies": {
+    "node-rest-client": "^3.1.0",
+    "firebase-admin": "~5.11.0",
+    "firebase-functions": "^1.0.0",
+    "cors": "^2.8.4"
+  },
+  "devDependencies": {
+    "eslint": "^4.13.1",
+    "eslint-plugin-promise": "^3.6.0"
+  },
+  "scripts": {
+    "lint": "./node_modules/.bin/eslint --max-warnings=0 .",
+    "serve": "firebase serve --only functions",
+    "shell": "firebase experimental:functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "private": true
+}

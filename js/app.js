@@ -80,7 +80,7 @@ define(['jquery', 'angular', 'magnificPopup'], function ($, angular) {
 
     vm.channels = [];
 
-    $.getJSON("data/maps.json", function(data) {
+    $.getJSON("https://us-central1-galvanic-deck-91716.cloudfunctions.net/getMaps", function(data) {
       vm.maps = data.maps;
       vm.$apply();
     });
